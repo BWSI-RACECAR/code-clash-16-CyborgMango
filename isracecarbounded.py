@@ -54,21 +54,7 @@ and form a loop after the 4th execution. Figure out why it's after the 4th execu
     """
 class Solution:
     def isracecarbounded(self, instructions):
-        right=instructions.count('R')
-        left=instructions.count('L')
-        if right==left:
-            return False
-        else:
-            return True
-            #type instructions: string
-            #return type: boolean
-            initial_pos=[0,0]
-            cur_pos=[0,0]
-            #direction= ['S':0,'W':1,'N':2,'E':3] Reference for cur_dir (current direction)
-            cur_dir=2
-            
-            #TODO: Write code below to returnn a boolean value with the solution to the prompt.
-            pass
+        return instructions.count('R')!=instructions.count('L')
         
 def main():
     input1=input()
