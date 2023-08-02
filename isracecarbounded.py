@@ -55,7 +55,7 @@ and form a loop after the 4th execution. Figure out why it's after the 4th execu
 class Solution:
     def isracecarbounded(self, instructions):
         right=instructions.count('R')
-        left=insturctions.count('L')
+        left=instructions.count('L')
         if right==left:
             return False
         else:
